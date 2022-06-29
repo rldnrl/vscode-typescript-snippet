@@ -1,0 +1,30 @@
+{
+    "name": "typescript-snippet",
+    "displayName": "typescript-snippet",
+    "description": "generate typescript code",
+    "publisher": "rldnrl",
+    "author": "Park Kiwook <devpark1002@gmail.com>",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/rldnrl/vscode-typescript-snippet"
+    },
+    "version": "1.0.0",
+    "engines": {
+        "vscode": "^1.68.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "typescript",
+                "path": "./snippets/typescript.code-snippets"
+            },
+            {
+                "language": "typescriptreact",
+                "path": "./snippets/typescriptreact.code-snippets"
+            }
+        ]
+    }
+}
