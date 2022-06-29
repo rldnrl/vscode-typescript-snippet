@@ -11,3 +11,8 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 ## [1.0.1]
 
 - fix: change vscode engine 
+- 
+## [1.1.1]
+
+- feat: update readme(wip)
+- feat: add useState with Type
