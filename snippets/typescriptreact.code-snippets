@@ -1,0 +1,138 @@
+{
+	"Create React Component with Interface": {
+		"prefix": "irfc",
+		"body": [
+			"interface ${TM_FILENAME_BASE}Props {",
+			"  $1",
+			"}",
+			"",
+			"export default function $TM_FILENAME_BASE({$2}: ${TM_FILENAME_BASE}Props) {",
+			"  return <div>${3:${TM_FILENAME_BASE}}</div>",
+			"}",
+			""
+		],
+		"description": "Create React Component with Interface"
+	},
+  "Create React Component with Type Alias": {
+		"prefix": "trfc",
+		"body": [
+			"type ${TM_FILENAME_BASE}Props = {",
+			"  $1",
+			"}",
+			"",
+			"export default function $TM_FILENAME_BASE({$2}: ${TM_FILENAME_BASE}Props) {",
+			"  return <div>${3:${TM_FILENAME_BASE}}</div>",
+			"}",
+			""
+		],
+		"description": "Create React Component with Type Alias"
+	},
+	"Create React Context": {
+		"prefix": "rfctx",
+		"body": [
+			"import React, { createContext, useContext, ReactNode } from 'react'",
+			"",
+			"type ${1}ContextType = {",
+			"  ${2}",
+			"}",
+			"",
+			"export const ${1}Context = createContext<${1}ContextType>(${3})",
+			"",
+			"export const use${1}Context = () => useContext(${1}Context)",
+			"",
+			"type ${1}Props = {",
+			"  children?: ReactNode",
+			"}",
+			"",
+			"export default function ${1}Provider({ children }: ${1}Props) {",
+			"  return <${1}Context.Provider value={{$4}}>{children}</${1}Context.Provider>",
+			"}",
+			""
+		],
+		"description": "Create React Context"
+	},
+	"Create useState": {
+		"prefix": "useState",
+		"body": "const [${1}, set${1/(.*)/${1:/capitalize}/}] = useState($2)",
+		"description": "Create useState"
+	},
+	"Create useEffect": {
+		"prefix": "useEffect",
+		"body": [
+			"useEffect(() => {",
+			"  $1",
+			"}, [$2])",
+			""
+		],
+		"description": "Create useEffect"
+	},
+	"Create useReducer State Type and State": {
+		"prefix": "tstate",
+		"body": [
+			"type ${1/(.*)/${1:/capitalize}/}State = {",
+			"  ${2}",
+			"}",
+			"",
+			"const ${1}State = {",
+			"",
+			"} as ${1/(.*)/${1:/capitalize}/}State",
+			"",
+		],
+		"description": "Create useReducer Action Type"
+	},
+	"Create useReducer Action Type": {
+		"prefix": "taction",
+		"body": [
+			"type ${1}Action = {",
+			"  type: ${2};",
+			"  payload: ${3};",
+			"} | {",
+			"   type: ${4};",
+			"   payload: ${5}",
+			"};",
+			"",
+		],
+		"description": "Create useReducer Action Type"
+	},
+	"Create useReducer Reducer": {
+		"prefix": "reducer",
+		"body": [
+			"const ${1}reducer = (state: ${2}State, action: ${3}Action) => {",
+			"  switch(action.type) {",
+			"    case \"${4}\":",
+			"      return ${5}",
+			"    default:",
+			"      return state",
+			"  }",
+			"}",
+			""
+		],
+		"description": "Create useReducer Reducer"
+	},
+	"Create useReducer": {
+		"prefix": "useReducer",
+		"body": [
+			"const [$1, $2] = useReducer(${3}reducer, initial{$4}State)"
+		],
+		"description": "Create useReducer"
+	},
+	"Import React": {
+		"prefix": "imr",
+		"body": "import {$1} from 'react'",
+		"description": "Import React"
+	},
+	"Create Custom Hook using useQuery": {
+		"prefix": "crq",
+		"body": "const use${1}Query = ($2) => useQuery($3, $4, $5)",
+		"description": "Create Custom Hook using useQuery"
+	},
+	"import and export default": {
+		"prefix": "exp",
+		"body": [
+			"import $1 from $2",
+			"",
+			"export default $1"
+		],
+		"description": "import and export default"
+	}
+}
