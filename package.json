@@ -4,9 +4,10 @@
     "description": "generate typescript code",
     "publisher": "rldnrl",
     "author": "Park Kiwook <devpark1002@gmail.com>",
+    "license": "MIT",
     "repository": {
         "type": "git",
-        "url": "https://github.com/rldnrl/vscode-typescript-snippet"
+        "url": "https://github.com/rldnrl/vscode-typescript-snippet.git"
     },
     "version": "1.0.0",
     "engines": {
