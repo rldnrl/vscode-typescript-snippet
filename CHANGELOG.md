@@ -21,3 +21,7 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 - feat: update readme(wip)
 - feat: add interface
+
+## [1.2.2]
+
+- fix: change table
