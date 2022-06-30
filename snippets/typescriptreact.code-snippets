@@ -131,13 +131,31 @@
 		"body": "const use${1}Query = ($2) => useQuery($3, $4, $5)",
 		"description": "Create Custom Hook using useQuery"
 	},
-	"import and export default": {
+	"Import and export default": {
 		"prefix": "exp",
 		"body": [
 			"import $1 from $2",
 			"",
 			"export default $1"
 		],
-		"description": "import and export default"
+		"description": "Import and export default"
+	},
+	"Create Interface": {
+		"prefix": "interface",
+		"body": [
+			"interface $1 {",
+			"  $2",
+			"}"
+		],
+		"description": "Create Interface"
+	},
+	"Create Generic Interface": {
+		"prefix": "interfaceGeneric",
+		"body": [
+			"interface {$1}<$2> {",
+			"  $3",
+			"}"
+		],
+		"description": "Create Interface"
 	}
 }
