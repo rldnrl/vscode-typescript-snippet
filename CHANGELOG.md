@@ -29,3 +29,8 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 ## [1.2.3]
 
 - fix: change snippet
+
+## [1.2.4]
+
+- fix: fix interface generic
+- fix: add import react
