@@ -5,7 +5,7 @@
 - TypeScript (TODO)
 
 ## Snippets
-
+### TypeScript React
 Trigger | Content
 --- | ---
 `irfc` | Create React Component with Interface
@@ -14,6 +14,14 @@ Trigger | Content
 `useState` | Create useState
 `tuseState` | Create useState with Type
 `useEffect` | Create useEffect
+`tstate` | Create useReducer State Type and State
+`taction` | Create useReducer Action Type
+`reducer` | Create useReducer Reducer
+`useReducer` | Create useReducer
+`imr` | Import React
+`exp` | Import and export default
+`interface` | Create Interface
+`interfaceGeneric`: Create Generic Interface
 
 ## Exmaple
 
