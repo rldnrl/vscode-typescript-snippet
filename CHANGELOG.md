@@ -16,3 +16,8 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 - feat: update readme(wip)
 - feat: add useState with Type
+
+## [1.2.1]
+
+- feat: update readme(wip)
+- feat: add interface
