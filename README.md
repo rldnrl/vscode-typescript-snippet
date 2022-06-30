@@ -21,7 +21,7 @@ Trigger | Content
 `imr` | Import React
 `exp` | Import and export default
 `interface` | Create Interface
-`interfaceGeneric`: Create Generic Interface
+`interfaceGeneric` | Create Generic Interface
 
 ## Exmaple
 
