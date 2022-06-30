@@ -1,0 +1,20 @@
+{
+  "Create Interface": {
+		"prefix": "interface",
+		"body": [
+			"interface $1 {",
+			"  $2",
+			"}"
+		],
+		"description": "Create Interface"
+	},
+	"Create Generic Interface": {
+		"prefix": "interfaceGeneric",
+		"body": [
+			"interface {$1}<$2> {",
+			"  $3",
+			"}"
+		],
+		"description": "Create Interface"
+	}
+}
