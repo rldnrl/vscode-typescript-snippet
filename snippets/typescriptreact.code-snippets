@@ -2,6 +2,8 @@
 	"Create React Component with Interface": {
 		"prefix": "irfc",
 		"body": [
+			"import React from 'react'",
+			"",
 			"interface ${TM_FILENAME_BASE}Props {",
 			"  $1",
 			"}",
@@ -16,6 +18,8 @@
   "Create React Component with Type Alias": {
 		"prefix": "trfc",
 		"body": [
+			"import React from 'react'",
+			"",
 			"type ${TM_FILENAME_BASE}Props = {",
 			"  $1",
 			"}",
@@ -94,7 +98,7 @@
 			"} | {",
 			"   type: ${4};",
 			"   payload: ${5}",
-			"};",
+			"}",
 			"",
 		],
 		"description": "Create useReducer Action Type"
@@ -152,7 +156,7 @@
 	"Create Generic Interface": {
 		"prefix": "interfaceGeneric",
 		"body": [
-			"interface ${1}<$2> {",
+			"interface $1<$2> {",
 			"  $3",
 			"}"
 		],
