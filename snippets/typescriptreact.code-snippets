@@ -152,7 +152,7 @@
 	"Create Generic Interface": {
 		"prefix": "interfaceGeneric",
 		"body": [
-			"interface {$1}<$2> {",
+			"interface ${1}<$2> {",
 			"  $3",
 			"}"
 		],
