@@ -4,12 +4,12 @@
 		"body": [
 			"import React from 'react'",
 			"",
-			"interface ${TM_FILENAME_BASE}Props {",
-			"  $1",
+			"interface ${1:${TM_FILENAME_BASE}}Props {",
+			"  $2",
 			"}",
 			"",
-			"export default function $TM_FILENAME_BASE({$2}: ${TM_FILENAME_BASE}Props) {",
-			"  return <div>${3:${TM_FILENAME_BASE}}</div>",
+			"export default function ${1:${TM_FILENAME_BASE}}({$3}: ${1:${TM_FILENAME_BASE}}Props) {",
+			"  return <div>${4:${TM_FILENAME_BASE}}</div>",
 			"}",
 			""
 		],
@@ -20,12 +20,12 @@
 		"body": [
 			"import React from 'react'",
 			"",
-			"type ${TM_FILENAME_BASE}Props = {",
-			"  $1",
+			"type ${1:${TM_FILENAME_BASE}}Props = {",
+			"  $2",
 			"}",
 			"",
-			"export default function $TM_FILENAME_BASE({$2}: ${TM_FILENAME_BASE}Props) {",
-			"  return <div>${3:${TM_FILENAME_BASE}}</div>",
+			"export default function ${1:${TM_FILENAME_BASE}}({$3}: ${1:${TM_FILENAME_BASE}}Props) {",
+			"  return <div>${4:${TM_FILENAME_BASE}}</div>",
 			"}",
 			""
 		],
@@ -36,20 +36,20 @@
 		"body": [
 			"import React, { createContext, useContext, ReactNode } from 'react'",
 			"",
-			"type ${1}ContextType = {",
+			"type ${1/(.*)/${1:/capitalize}/}ContextType = {",
 			"  ${2}",
 			"}",
 			"",
-			"export const ${1}Context = createContext<${1}ContextType>(${3})",
+			"export const ${1/(.*)/${1:/capitalize}/}Context = createContext<${1/(.*)/${1:/capitalize}/}ContextType>(${3})",
 			"",
-			"export const use${1}Context = () => useContext(${1}Context)",
+			"export const use${1/(.*)/${1:/capitalize}/}Context = () => useContext(${1/(.*)/${1:/capitalize}/}Context)",
 			"",
-			"type ${1}Props = {",
+			"type ${1/(.*)/${1:/capitalize}/}Props = {",
 			"  children?: ReactNode",
 			"}",
 			"",
-			"export default function ${1}Provider({ children }: ${1}Props) {",
-			"  return <${1}Context.Provider value={{$4}}>{children}</${1}Context.Provider>",
+			"export default function ${1/(.*)/${1:/capitalize}/}Provider({ children }: ${1}Props) {",
+			"  return <${1/(.*)/${1:/capitalize}/}Context.Provider value={{$4}}>{children}</${1}Context.Provider>",
 			"}",
 			""
 		],
@@ -57,12 +57,12 @@
 	},
 	"Create useState": {
 		"prefix": "useState",
-		"body": "const [${1}, set${1/(.*)/${1:/capitalize}/}] = useState($2)",
+		"body": "const [${1:state}, set${1/(.*)/${1:/capitalize}/}] = useState(${3:initialState})",
 		"description": "Create useState"
 	},
 	"Create useState with Type": {
 		"prefix": "tuseState",
-		"body": "const [${1}, set${1/(.*)/${1:/capitalize}/}] = useState<$2>($3)",
+		"body": "const [${1:state}, set${1/(.*)/${1:/capitalize}/}] = useState<${2:Type}>(${3:initialState})",
 		"description": "Create useState with Type"
 	},
 	"Create useEffect": {
@@ -92,7 +92,7 @@
 	"Create useReducer Action Type": {
 		"prefix": "taction",
 		"body": [
-			"type ${1}Action = {",
+			"type ${1/(.*)/${1:/capitalize}/}Action = {",
 			"  type: ${2};",
 			"  payload: ${3};",
 			"} | {",
@@ -121,7 +121,7 @@
 	"Create useReducer": {
 		"prefix": "useReducer",
 		"body": [
-			"const [$1, $2] = useReducer(${3}reducer, initial{$4}State)"
+			"const [${1:state}, ${2:dispatch}] = useReducer(${3}reducer, initial{$4}State)"
 		],
 		"description": "Create useReducer"
 	},
@@ -147,7 +147,7 @@
 	"Create Interface": {
 		"prefix": "interface",
 		"body": [
-			"interface $1 {",
+			"interface ${1/(.*)/${1:/capitalize}/} {",
 			"  $2",
 			"}"
 		],
@@ -156,10 +156,40 @@
 	"Create Generic Interface": {
 		"prefix": "interfaceGeneric",
 		"body": [
-			"interface $1<$2> {",
+			"interface ${1/(.*)/${1:/capitalize}/}<${2:T}> {",
 			"  $3",
 			"}"
 		],
 		"description": "Create Interface"
+	},
+	"Create Type Alias": {
+		"prefix": "type",
+		"body": [
+			"type ${1/(.*)/${1:/capitalize}/} = $2"
+		],
+		"description": "Create Type Alias"
+	},
+	"Create Object Type Alias": {
+		"prefix": "typeObject",
+		"body": [
+			"type ${1/(.*)/${1:/capitalize}/} = {",
+			"  $2",
+			"}"
+		],
+		"description": "Create Object Type Alias"
+	},
+	"Create Generic Type Alias": {
+		"prefix": "typeGeneric",
+		"body": [
+			"type ${1/(.*)/${1:/capitalize}/}<${2:T}> = $3"
+		],
+		"description": "Create Generic Type Alias"
+	},
+	"Create Function Type Alias": {
+		"prefix": "typeFunction",
+		"body": [
+			"type ${1/(.*)/${1:/capitalize}/} = ($2) => $3"
+		],
+		"description": "Create Function Type Alias"
 	}
 }

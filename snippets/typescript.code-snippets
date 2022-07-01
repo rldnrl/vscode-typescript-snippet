@@ -1,8 +1,8 @@
 {
-  "Create Interface": {
+	"Create Interface": {
 		"prefix": "interface",
 		"body": [
-			"interface $1 {",
+			"interface ${1/(.*)/${1:/capitalize}/} {",
 			"  $2",
 			"}"
 		],
@@ -11,10 +11,40 @@
 	"Create Generic Interface": {
 		"prefix": "interfaceGeneric",
 		"body": [
-			"interface $1<$2> {",
+			"interface ${1/(.*)/${1:/capitalize}/}<${2:T}> {",
 			"  $3",
 			"}"
 		],
 		"description": "Create Interface"
+	},
+	"Create Type Alias": {
+		"prefix": "type",
+		"body": [
+			"type ${1/(.*)/${1:/capitalize}/} = $2"
+		],
+		"description": "Create Type Alias"
+	},
+	"Create Object Type Alias": {
+		"prefix": "typeObject",
+		"body": [
+			"type ${1/(.*)/${1:/capitalize}/} = {",
+			"  $2",
+			"}"
+		],
+		"description": "Create Object Type Alias"
+	},
+	"Create Generic Type Alias": {
+		"prefix": "typeGeneric",
+		"body": [
+			"type ${1/(.*)/${1:/capitalize}/}<${2:T}> = $3"
+		],
+		"description": "Create Generic Type Alias"
+	},
+	"Create Function Type Alias": {
+		"prefix": "typeFunction",
+		"body": [
+			"type ${1/(.*)/${1:/capitalize}/} = ($2) => $3"
+		],
+		"description": "Create Function Type Alias"
 	}
 }
