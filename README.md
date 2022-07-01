@@ -22,6 +22,10 @@ Trigger | Content
 `exp` | Import and export default
 `interface` | Create Interface
 `interfaceGeneric` | Create Generic Interface
+`type` | Create Type Alias
+`typeObject` | Create Object Type Alias
+`typeGeneric` | Create Generic Type Alias
+`typeFunction` | Create Function Type Alias
 
 ## Exmaple
 
