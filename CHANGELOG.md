@@ -34,3 +34,8 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 - fix: fix interface generic
 - fix: add import react
+
+## [1.3.4]
+
+- Add type alias snippet
+- Apply capitalize
