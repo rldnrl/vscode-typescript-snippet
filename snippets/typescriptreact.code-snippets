@@ -82,9 +82,9 @@
 			"  ${2}",
 			"}",
 			"",
-			"const ${1}State = {",
-			"",
-			"} as ${1/(.*)/${1:/capitalize}/}State",
+			"const ${3}State: ${1/(.*)/${1:/capitalize}/}State = {",
+			"  ${4}",
+			"}",
 			"",
 		],
 		"description": "Create useReducer Action Type"
@@ -134,6 +134,13 @@
 		"prefix": "crq",
 		"body": "const use${1}Query = ($2) => useQuery($3, $4, $5)",
 		"description": "Create Custom Hook using useQuery"
+	},
+	"Create useQuery using react-query": {
+		"prefix": "useQuery",
+		"body": [
+			"const ${1:query} = useQuery(${2:queryKey}, ${3:asyncFn}, ${4:option})"
+		],
+		"description": "Create useQuery using react-query"
 	},
 	"Import and export default": {
 		"prefix": "exp",
