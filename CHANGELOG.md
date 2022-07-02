@@ -39,3 +39,9 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 - Add type alias snippet
 - Apply capitalize
+
+## [1.4.4]
+- change capitalize in tstate
+- change type assertion to assign in tstate
+- add useQuery
+- add useState snippet and useReducer snippet in typescript snippet
