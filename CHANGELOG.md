@@ -45,3 +45,6 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 - change type assertion to assign in tstate
 - add useQuery
 - add useState snippet and useReducer snippet in typescript snippet
+
+## [1.4.5]
+- change priority useState initialState
