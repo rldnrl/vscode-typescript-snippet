@@ -47,4 +47,4 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 - add useState snippet and useReducer snippet in typescript snippet
 
 ## [1.4.5]
-- change priority useState initialState
+- fix: change priority initialState in useState
