@@ -195,8 +195,15 @@
 	"Create Function Type Alias": {
 		"prefix": "typeFunction",
 		"body": [
-			"type ${1/(.*)/${1:/capitalize}/} = ($2) => $3"
+			"type ${1/(.*)/${1:/capitalize}/} = (${2:Params}) => ${3:Return}"
 		],
 		"description": "Create Function Type Alias"
+	},
+	"Attach as const in object value": {
+		"prefix": "asconst",
+		"body": [
+			"as const"
+		],
+		"description": "Attach as const in object value"
 	}
 }
