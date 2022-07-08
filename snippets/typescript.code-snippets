@@ -107,11 +107,20 @@
 		],
 		"description": "Create Function Type Alias"
 	},
+	"Mapped Type": {
+		"prefix": "mappedType",
+		"body": [
+			"type ${1/(.*)/${1:/capitalize}/} = {",
+			"  [${2:key} in ${3:UnionType}]: ${4:Type}",
+			"}"
+		],
+		"description": "Mapped Type"
+	},
 	"Attach as const in object value": {
 		"prefix": "asconst",
 		"body": [
 			"as const"
 		],
 		"description": "Attach as const in object value"
-	}
+	},
 }
