@@ -48,3 +48,9 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [1.4.5]
 - fix: change priority initialState in useState
+
+## [1.5.5]
+- feat: add detail type in typeFunction
+- feat: add as const
+- feat: add mapped type
+- feat: update readme
