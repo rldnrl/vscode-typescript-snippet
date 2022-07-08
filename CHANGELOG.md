@@ -54,3 +54,6 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 - feat: add as const
 - feat: add mapped type
 - feat: update readme
+
+## [1.5.6]
+- update icon
