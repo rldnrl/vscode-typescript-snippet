@@ -129,5 +129,12 @@
 			"Map<${1:KeyType}, ${2:ValueType}>"
 		],
 		"description": "Create Map Type"
+	},
+	"Create Map Instance": {
+		"prefix": "newMap",
+		"body": [
+			"new Map<${1:Key}, ${2:Value}>(${3})"
+		],
+		"description": "Create Map Constructor"
 	}
 }
