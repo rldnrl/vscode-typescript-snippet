@@ -26,6 +26,12 @@ Trigger | Content
 `typeObject→` | Create Object Type Alias
 `typeGeneric→` | Create Generic Type Alias
 `typeFunction→` | Create Function Type Alias
+`mappedType→` | Create Mapped Type
+`asconst→` | Attach as const in object value
+`MapType→` | Define Map Type
+`newMap→` | Create Map Instance
+`SetType→` | Define Set Type
+`newSet→` | Create Set Instance
 
 ## Exmaple
 
