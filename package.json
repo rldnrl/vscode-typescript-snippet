@@ -1,6 +1,6 @@
 {
     "name": "typescript-snippet",
-    "displayName": "typescript-snippet",
+    "displayName": "TypeScript Snippet",
     "description": "generate typescript code",
     "publisher": "rldnrl",
     "author": "Park Kiwook <devpark1002@gmail.com>",
@@ -15,7 +15,7 @@
         "type": "git",
         "url": "https://github.com/rldnrl/vscode-typescript-snippet.git"
     },
-    "version": "1.5.6",
+    "version": "1.5.7",
     "engines": {
         "vscode": "^1.64.0"
     },
