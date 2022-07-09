@@ -136,5 +136,11 @@
 			"new Map<${1:Key}, ${2:Value}>(${3})"
 		],
 		"description": "Create Map Constructor"
+	},
+	"Create Set Instance": {
+		"prefix": "newSet",
+		"body": [
+			"new Set<${1:Type}>(${3})"
+		]
 	}
 }
