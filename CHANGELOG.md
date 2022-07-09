@@ -57,3 +57,6 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [1.5.6]
 - update icon
+
+## [1.5.7]
+- change display name in package.json
