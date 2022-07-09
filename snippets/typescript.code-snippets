@@ -137,10 +137,16 @@
 		],
 		"description": "Create Map Constructor"
 	},
+	"Define Set type": {
+		"prefix": "SetType",
+		"body": [
+			"Set<${1:Type}>"
+		]
+	},
 	"Create Set Instance": {
 		"prefix": "newSet",
 		"body": [
-			"new Set<${1:Type}>(${3})"
+			"new Set<${1:Type}>(${2})"
 		]
 	}
 }
