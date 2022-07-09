@@ -60,3 +60,11 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [1.5.7]
 - change display name in package.json
+
+## [1.6.7]
+- feat: change Function Type body
+- feat: add Map Instance
+- feat: add define Map type
+- feat: add Set Instance
+- feat: add define Set type
+- feat: update readme
