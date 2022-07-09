@@ -195,18 +195,18 @@
 	"Create Function Type Alias": {
 		"prefix": "typeFunction",
 		"body": [
-			"type ${1/(.*)/${1:/capitalize}/} = (${2:Params}) => ${3:Return}"
+			"type ${1/(.*)/${1:/capitalize}/} = (${2:params}: ${3:Params}) => ${4:Return}"
 		],
 		"description": "Create Function Type Alias"
 	},
-	"Mapped Type": {
+	"Define Mapped Type": {
 		"prefix": "mappedType",
 		"body": [
 			"type ${1/(.*)/${1:/capitalize}/} = {",
 			"  [${2:key} in ${3:UnionType}]: ${4:Type}",
 			"}"
 		],
-		"description": "Mapped Type"
+		"description": "Define Mapped Type"
 	},
 	"Attach as const in object value": {
 		"prefix": "asconst",
@@ -215,4 +215,11 @@
 		],
 		"description": "Attach as const in object value"
 	},
+	"Define Map Type": {
+		"prefix": "MapType",
+		"body": [
+			"Map<${1:KeyType}, ${2:ValueType}>"
+		],
+		"description": "Define Map Type"
+	}
 }

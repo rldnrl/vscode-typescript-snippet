@@ -123,4 +123,11 @@
 		],
 		"description": "Attach as const in object value"
 	},
+	"Define Map Type": {
+		"prefix": "MapType",
+		"body": [
+			"Map<${1:KeyType}, ${2:ValueType}>"
+		],
+		"description": "Create Map Type"
+	}
 }
