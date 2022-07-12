@@ -68,3 +68,6 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 - feat: add Set Instance
 - feat: add define Set type
 - feat: update readme
+
+## [1.7.7]
+- feat: delete typescript snippet
