@@ -15,7 +15,7 @@
         "type": "git",
         "url": "https://github.com/rldnrl/vscode-typescript-snippet.git"
     },
-    "version": "1.6.7",
+    "version": "1.7.7",
     "engines": {
         "vscode": "^1.64.0"
     },
@@ -26,7 +26,7 @@
         "snippets": [
             {
                 "language": "typescript",
-                "path": "./snippets/typescript.code-snippets"
+                "path": "./snippets/typescriptreact.code-snippets"
             },
             {
                 "language": "typescriptreact",
