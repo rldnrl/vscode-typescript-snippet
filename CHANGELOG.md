@@ -71,3 +71,6 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [1.7.7]
 - feat: delete typescript snippet
+
+## [1.7.8]
+- feat: change vscode engine version
