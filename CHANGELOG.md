@@ -74,3 +74,8 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [1.7.8]
 - feat: change vscode engine version
+
+## [1.8.8]
+- internal utility type snippet
+- change trfc
+- add array type
