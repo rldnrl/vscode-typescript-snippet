@@ -15,18 +15,50 @@
 		],
 		"description": "Create React Component with Interface"
 	},
+	"Create Arrow Function React Component with Interface": {
+		"prefix": "irafc",
+		"body": [
+			"import React from 'react'",
+			"",
+			"interface ${1:${TM_FILENAME_BASE}}Props {",
+			"  $2",
+			"}",
+			"",
+			"const ${1:${TM_FILENAME_BASE}} = ({$3}: ${1:${TM_FILENAME_BASE}}Props) => {",
+			"  return <div>${4:${TM_FILENAME_BASE}}</div>",
+			"}",
+			"",
+			"export default ${1:${TM_FILENAME_BASE}}",
+			""
+		],
+		"description": "Create Arrow Function React Component with Interface"
+	},
   "Create React Component with Type Alias": {
 		"prefix": "trfc",
 		"body": [
 			"import React from 'react'",
 			"",
-			"type ${1:${TM_FILENAME_BASE}}Props = {",
-			"  $2",
-			"}",
+			"type ${1:${TM_FILENAME_BASE}}Props = ${2}",
 			"",
-			"export default function ${1:${TM_FILENAME_BASE}}({$3}: ${1:${TM_FILENAME_BASE}}Props) {",
+			"export default function ${1:${TM_FILENAME_BASE}}(${3:props}: ${1:${TM_FILENAME_BASE}}Props) {",
 			"  return <div>${4:${TM_FILENAME_BASE}}</div>",
 			"}",
+			""
+		],
+		"description": "Create React Component with Type Alias"
+	},
+  "Create Arrow Function React Component with Type Alias": {
+		"prefix": "trafc",
+		"body": [
+			"import React from 'react'",
+			"",
+			"type ${1:${TM_FILENAME_BASE}}Props = ${2}",
+			"",
+			"const ${1:${TM_FILENAME_BASE}} = (${3:props}: ${1:${TM_FILENAME_BASE}}Props) => {",
+			"  return <div>${4:${TM_FILENAME_BASE}}</div>",
+			"}",
+			"",
+			"export default ${1:${TM_FILENAME_BASE}}",
 			""
 		],
 		"description": "Create React Component with Type Alias"
@@ -151,6 +183,11 @@
 		],
 		"description": "Import and export default"
 	},
+	"Default As": {
+		"prefix": "dfas",
+		"body": "default as ${1}",
+		"description": "Default As"
+	},
 	"Create Interface": {
 		"prefix": "interface",
 		"body": [
@@ -227,7 +264,7 @@
 		"body": [
 			"new Map<${1:Key}, ${2:Value}>(${3})"
 		],
-		"description": "Create Map Constructor"
+		"description": "Create Map Instance"
 	},
 	"Define Set type": {
 		"prefix": "SetType",
@@ -239,6 +276,112 @@
 		"prefix": "newSet",
 		"body": [
 			"new Set<${1:Type}>(${2})"
-		]
+		],
+		"description": "Create Set Instance"
+	},
+	"Make all properties in Type optional.": {
+		"prefix": "Partial",
+		"body": [
+			"Partial<${1:Type}>"
+		],
+		"description": "Make all properties in Type optional."
+	},
+	"Make all properties in Type required.": {
+		"prefix": "Required",
+		"body": [
+			"Required<${1:Type}>"
+		],
+		"description": "Make all properties in Type required."
+	},
+	"Make all properties in Type readonly.": {
+		"prefix": "Readonly",
+		"body": [
+			"Readonly<${1:Type}>"
+		],
+		"description": "Make all properties in Type readonly."
+	},
+	"Construct a type with a set of properties Keys of type Value.": {
+		"prefix": "Record",
+		"body": [
+			"Record<${1:Keys}, ${2:Value}>"
+		],
+		"description": "Construct a type with a set of properties Keys of type Value."
+	},
+	"From Type, pick a set of properties whose keys are in the union Keys": {
+		"prefix": "Pick",
+		"body": [
+			"Pick<${1:Type}, ${2:Keys}>"
+		],
+		"description": "From Type, pick a set of properties whose keys are in the union Keys"
+	},
+	"Exclude from Type those types that are assignable to Union": {
+		"prefix": "Exclude",
+		"body": [
+			"Exclude<${1:Type}, {2:Union}>"
+		],
+		"description": "Exclude from Type those types that are assignable to Union."
+	},
+	"Construct a type with the properties of Type except for those in type Keys.": {
+		"prefix": "Omit",
+		"body": [
+			"Omit<${1:Type}, {2:Keys}>"
+		],
+		"description": "Construct a type with the properties of Type except for those in type Keys."
+	},
+	"Extract from Type those types that are assignable to Union": {
+		"prefix": "Extract",
+		"body": [
+			"Extract<${1:Type}, {2:Union}>"
+		],
+		"description": "Extract from Type those types that are assignable to Union"
+	},
+	"Exclude null and undefined from Type": {
+		"prefix": "NonNullable",
+		"body": [
+			"NonNullable<${1:Type}>"
+		],
+		"description": "Exclude null and undefined from Type"
+	},
+	"Obtain the parameters of a function type in a tuple": {
+		"prefix": "Parameters",
+		"body": [
+			"Parameters<${1:FuncType}>"
+		],
+		"description": "Obtain the parameters of a function type in a tuple"
+	},
+	"Obtain the return type of a function type": {
+		"prefix": "ReturnType",
+		"body": [
+			"ReturnType<${1:FuncType}>"
+		],
+		"description": "Obtain the return type of a function type"
+	},
+	"Convert string literal type to uppercase": {
+		"prefix": "Uppercase",
+		"body": [
+			"Uppercase<${1:StringLiteral}>"
+		],
+		"description": "Convert string literal type to uppercase"
+	},
+	"Convert string literal type to lowercase": {
+		"prefix": "Lowercase",
+		"body": [
+			"Lowercase<$1{StringLiteral}>"
+		],
+		"description": "Convert string literal type to lowercase"
+	},
+	"Convert first character of string literal type to uppercase": {
+		"prefix": "Capitalize",
+		"body": [
+			"Capitalize<${1:StringLiteral}>"
+		],
+		"description": "Convert first character of string literal type to uppercase"
+	},
+	"Convert first character of string literal type to lowercase": {
+		"prefix": "Uncapitalize",
+		"body": [
+			"Uncapitalize<${1:StringLiteral}>"
+		],
+		"description": "Convert first character of string literal type to lowercase"
 	}
 }
