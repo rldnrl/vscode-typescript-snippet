@@ -82,3 +82,6 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [1.8.9]
 - update readme
+
+## [1.8.10]
+- update readme
