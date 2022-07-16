@@ -5,21 +5,9 @@
 - TypeScript
 
 ## Snippets
-### TypeScript React
+
 Trigger | Content
 --- | ---
-`irfc→` | Create React Component with Interface
-`irafc→` | Create Arrow Function React Component with Interface
-`trfc→` | Create React Component with Type Alias
-`trafc→` | Create Arrow Function React Component with Type Alias
-`rfctx→` | Create React Context
-`useState→` | Create useState
-`tuseState→` | Create useState with Type
-`useEffect→` | Create useEffect
-`tstate→` | Create useReducer State Type and State
-`taction→` | Create useReducer Action Type
-`reducer→` | Create useReducer Reducer
-`useReducer→` | Create useReducer
 `imr→` | Import React
 `exp→` | Import and export default
 `dfas→` | Default As
@@ -35,6 +23,11 @@ Trigger | Content
 `newMap→` | Create Map Instance
 `SetType→` | Define Set Type
 `newSet→` | Create Set Instance
+
+### TypeScript Built-in Utility Type
+
+Trigger | Content
+--- | ---
 `Partial→` | Make all properties in Type optional.
 `Required→` | Make all properties in Type required.
 `Readonly→` | Make all properties in Type readonly.
@@ -50,6 +43,23 @@ Trigger | Content
 `Lowercase→` | Convert string literal type to lowercase
 `Capitalize→` | Convert first character of string literal type to uppercase
 `Uncapitalize→` | Convert first character of string literal type to lowercase
+
+### TypeScript React
+
+Trigger | Content
+--- | ---
+`irfc→` | Create React Component with Interface
+`irafc→` | Create Arrow Function React Component with Interface
+`trfc→` | Create React Component with Type Alias
+`trafc→` | Create Arrow Function React Component with Type Alias
+`rfctx→` | Create React Context
+`useState→` | Create useState
+`tuseState→` | Create useState with Type
+`useEffect→` | Create useEffect
+`tstate→` | Create useReducer State Type and State
+`taction→` | Create useReducer Action Type
+`reducer→` | Create useReducer Reducer
+`useReducer→` | Create useReducer
 
 ## Exmaple
 
