@@ -79,3 +79,6 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 - internal utility type snippet
 - change trfc
 - add array type
+
+## [1.8.9]
+- update readme
