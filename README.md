@@ -9,7 +9,9 @@
 Trigger | Content
 --- | ---
 `irfc→` | Create React Component with Interface
+`irafc→` | Create Arrow Function React Component with Interface
 `trfc→` | Create React Component with Type Alias
+`trafc→` | Create Arrow Function React Component with Type Alias
 `rfctx→` | Create React Context
 `useState→` | Create useState
 `tuseState→` | Create useState with Type
@@ -20,6 +22,7 @@ Trigger | Content
 `useReducer→` | Create useReducer
 `imr→` | Import React
 `exp→` | Import and export default
+`dfas→` | Default As
 `interface→` | Create Interface
 `interfaceGeneric→` | Create Generic Interface
 `type→` | Create Type Alias
@@ -32,6 +35,21 @@ Trigger | Content
 `newMap→` | Create Map Instance
 `SetType→` | Define Set Type
 `newSet→` | Create Set Instance
+`Partial→` | Make all properties in Type optional.
+`Required→` | Make all properties in Type required.
+`Readonly→` | Make all properties in Type readonly.
+`Record→` | Construct a type with a set of properties Keys of type Value.
+`Pick→` | From Type, pick a set of properties whose keys are in the union Keys
+`Exclude→` | Exclude from Type those types that are assignable to Union
+`Omit→` | Construct a type with the properties of Type except for those in type Keys.
+`Extract→` | Extract from Type those types that are assignable to Union
+`NonNullable→` | Exclude null and undefined from Type
+`Parameters→` | Obtain the parameters of a function type in a tuple
+`ReturnType→` | Obtain the return type of a function type
+`Uppercase→` | Convert string literal type to uppercase
+`Lowercase→` | Convert string literal type to lowercase
+`Capitalize→` | Convert first character of string literal type to uppercase
+`Uncapitalize→` | Convert first character of string literal type to lowercase
 
 ## Exmaple
 
