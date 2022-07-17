@@ -10,7 +10,7 @@ Trigger | Content
 --- | ---
 `imr→` | Import React
 `exp→` | Import and export default
-`dfas→` | Default As
+`dfas→` | Default As. `default as `
 `interface→` | Create Interface
 `interfaceGeneric→` | Create Generic Interface
 `type→` | Create Type Alias
@@ -23,6 +23,9 @@ Trigger | Content
 `newMap→` | Create Map Instance
 `SetType→` | Define Set Type
 `newSet→` | Create Set Instance
+`str[]→` | `string[]`. string array
+`num[]→` | `number[]`. number array
+`bool[]→` | `boolean[]`. boolean array
 
 ### TypeScript Built-in Utility Type
 
