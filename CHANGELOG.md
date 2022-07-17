@@ -88,3 +88,6 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [1.9.0]
 - add array snippet
+
+## [1.9.1]
+- update readme
