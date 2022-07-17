@@ -85,3 +85,6 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [1.8.10]
 - update readme
+
+## [1.9.0]
+- add array snippet
