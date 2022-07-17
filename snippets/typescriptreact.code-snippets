@@ -383,5 +383,26 @@
 			"Uncapitalize<${1:StringLiteral}>"
 		],
 		"description": "Convert first character of string literal type to lowercase"
-	}
+	},
+	"string array": {
+		"prefix": "str[]",
+		"body": [
+			"string[]"
+		],
+		"description": "string array"
+	},
+	"number array": {
+		"prefix": "num[]",
+		"body": [
+			"number[]"
+		],
+		"description": "number array"
+	},
+	"boolean array": {
+		"prefix": "bool[]",
+		"body": [
+			"boolean[]"
+		],
+		"description": "boolean array"
+	},
 }
