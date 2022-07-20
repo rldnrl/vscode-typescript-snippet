@@ -1,4 +1,25 @@
 {
+	"Create React Component no props": {
+		"prefix": "rfc",
+		"body": [
+			"export default function ${1:${TM_FILENAME_BASE}}() {",
+			"  return <div>${4:${TM_FILENAME_BASE}}</div>",
+			"}",
+			""
+		],
+		"description": "Create React Component no props"
+	},
+	"Create Arrow Function React Component no props": {
+		"prefix": "rafc",
+		"body": [
+			"const ${1:${TM_FILENAME_BASE}} = () => {",
+			"  return <div>${4:${TM_FILENAME_BASE}}</div>",
+			"}",
+			"",
+			"export default ${1:${TM_FILENAME_BASE}}"
+		],
+		"description": "Create React Component no props"
+	},
 	"Create React Component with Interface": {
 		"prefix": "irfc",
 		"body": [
@@ -236,6 +257,24 @@
 		],
 		"description": "Create Function Type Alias"
 	},
+	"Create enum type": {
+		"prefix": "enum",
+		"body": [
+			"enum ${1:EnumType} {",
+			"  ${2}",
+			"}"
+		],
+		"description": "Create Enum Type"
+	},
+	"Create const enum type": {
+		"prefix": "cenum",
+		"body": [
+			"const enum ${1:EnumType} {",
+			"  ${2}",
+			"}"
+		],
+		"description": "Create const enum type"
+	},
 	"Define Mapped Type": {
 		"prefix": "mappedType",
 		"body": [
@@ -317,21 +356,21 @@
 	"Exclude from Type those types that are assignable to Union": {
 		"prefix": "Exclude",
 		"body": [
-			"Exclude<${1:Type}, {2:Union}>"
+			"Exclude<${1:Type}, ${2:Union}>"
 		],
 		"description": "Exclude from Type those types that are assignable to Union."
 	},
 	"Construct a type with the properties of Type except for those in type Keys.": {
 		"prefix": "Omit",
 		"body": [
-			"Omit<${1:Type}, {2:Keys}>"
+			"Omit<${1:Type}, ${2:Keys}>"
 		],
 		"description": "Construct a type with the properties of Type except for those in type Keys."
 	},
 	"Extract from Type those types that are assignable to Union": {
 		"prefix": "Extract",
 		"body": [
-			"Extract<${1:Type}, {2:Union}>"
+			"Extract<${1:Type}, ${2:Union}>"
 		],
 		"description": "Extract from Type those types that are assignable to Union"
 	},
