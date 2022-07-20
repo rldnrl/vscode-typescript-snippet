@@ -91,3 +91,9 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [1.9.1]
 - update readme
+
+## [1.10.0]
+- react snippet with no props
+- enum snippet
+- fix snippet
+  - contain $
