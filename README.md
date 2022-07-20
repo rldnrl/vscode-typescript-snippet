@@ -26,6 +26,8 @@ Trigger | Content
 `str[]→` | `string[]`. string array
 `num[]→` | `number[]`. number array
 `bool[]→` | `boolean[]`. boolean array
+`enum→` | Create enum type
+`cenum→` | Create const enum type
 
 ### TypeScript Built-in Utility Type
 
@@ -51,6 +53,8 @@ Trigger | Content
 
 Trigger | Content
 --- | ---
+`rfc→` | Create React Component no props
+`rafc→` | Create Arrow Function React Component no props
 `irfc→` | Create React Component with Interface
 `irafc→` | Create Arrow Function React Component with Interface
 `trfc→` | Create React Component with Type Alias
